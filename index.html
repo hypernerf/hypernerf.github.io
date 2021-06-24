@@ -17,6 +17,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-EDF010G6PN');
+
   </script>
 
   <script type="module"
@@ -201,7 +202,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
+            <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark" disabled>
                   <span class="icon">
@@ -256,20 +257,8 @@
 
 <section class="hero is-dark is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container has-text-centered">
       <div id="results-carousel" class="carousel results-carousel">
-        <div>
-          <div class="results-item">
-            <video poster="" id="split-cookie-rgb" autoplay controls muted loop height="100%">
-              <source src="./static/videos/split-cookie_rgb.mp4"
-                      type="video/mp4">
-            </video>
-            <video poster="" id="split-cookie-depth" autoplay controls muted loop height="100%">
-              <source src="./static/videos/split-cookie_depth.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div>
 
         <div>
           <div class="results-item">
@@ -279,6 +268,19 @@
             </video>
             <video poster="" id="espresso-depth" autoplay controls muted loop height="100%">
               <source src="./static/videos/espresso_depth.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div>
+          <div class="results-item">
+            <video poster="" id="split-cookie-rgb" autoplay controls muted loop height="100%">
+              <source src="./static/videos/split-cookie_rgb.mp4"
+                      type="video/mp4">
+            </video>
+            <video poster="" id="split-cookie-depth" autoplay controls muted loop height="100%">
+              <source src="./static/videos/split-cookie_depth.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -310,6 +312,30 @@
           </div>
         </div>
 
+        <div>
+          <div class="results-item">
+            <video poster="" id="americano-rgb" autoplay controls muted loop height="100%">
+              <source src="./static/videos/americano_rgb.mp4"
+                      type="video/mp4">
+            </video>
+            <video poster="" id="americano-depth" autoplay controls muted loop height="100%">
+              <source src="./static/videos/americano_depth.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-quarters">
+          <p>
+            Here we show results generated with <i>HyperNeRF</i>. These videos show the input video being
+            played
+            back with a stabilized novel camera path. The right side video shows the depth of the scene.
+            Click on the arrows or drag to see more results.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -357,7 +383,10 @@
       <div class="column is-four-fifths">
         <h2 class="title is-2">Video</h2>
         <div class="publication-video">
-          <iframe width="640" height="480" src="https://www.youtube.com/embed/qzgdE_ghkaI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="640" height="480" src="https://www.youtube.com/embed/qzgdE_ghkaI"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
         </div>
       </div>
     </div>

@@ -221,8 +221,9 @@ body {
 
 .hyper-space {
   width: 100%;
-  padding-bottom: calc(100% - 5%);
+  padding-bottom: calc(100% - 7%);
   box_sizing: border-box;
+  touch-action: none;
 
   background-image: url(../figures/hyper_log_prob.png);
   background-size: contain;
@@ -230,11 +231,11 @@ body {
 }
 
 .hyper-space-cursor {
-  width: 5%;
-  padding-bottom: calc(5% - 4px);
+  width: 7%;
+  padding-bottom: calc(7% - 6px);
   background: #29e;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
 }
 
 .hyper-grid-wrapper{

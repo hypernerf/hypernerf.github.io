@@ -221,7 +221,9 @@ body {
 
 .hyper-space {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  padding-bottom: calc(100% - 5%);
+  box_sizing: border-box;
+
   background-image: url(../figures/hyper_log_prob.png);
   background-size: contain;
   border-radius: 10px;
@@ -229,7 +231,7 @@ body {
 
 .hyper-space-cursor {
   width: 5%;
-  aspect-ratio: 1 / 1;
+  padding-bottom: calc(5% - 4px);
   background: #29e;
   border-radius: 50%;
   border: 2px solid #fff;
@@ -237,21 +239,26 @@ body {
 
 .hyper-grid-wrapper{
   width: 95%;
-  aspect-ratio: 1 / 1;
+  padding-bottom: 95%;
   overflow: hidden;
   border-radius: 50%;
   border: 2px solid #29e;
+  position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .hyper-grid-rgb {
   margin-top: -1px;
   width: 100%;
-  aspect-ratio: 192 / 208;
+  height: 100%;
   overflow: hidden;
+
+  position: absolute;
 }
 
 .hyper-grid-rgb img {
   position: relative;
+  height: 2000%;
   width: 2000%;
   max-width: none !important;
 }

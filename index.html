@@ -6,11 +6,11 @@
         content="HyperNeRF handles topological variations by modeling a family of shapes in a higher-dimensional space, thereby producing more realistic renderings and more accurate geometric reconstructions.">
   <meta name="keywords" content="HyperNeRF, Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="./static/images/thumbnail.png" />
+  <meta property="og:image" content="./static/images/thumbnail.png"/>
   <link rel="image_src" href="./static/images/thumbnail.png">
   <link rel="icon"
         type="image/x-icon"
-        href="./static/images/favicon.ico" />
+        href="./static/images/favicon.ico"/>
 
   <title>HyperNeRF: A Higher-Dimensional Representation for Topologically Varying Neural Radiance
     Fields</title>
@@ -23,6 +23,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-EDF010G6PN');
+
 
   </script>
 
@@ -219,7 +220,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+            </span>
             <!--              &lt;!&ndash; Video Link. &ndash;&gt;-->
             <!--              <span class="link-block">-->
             <!--                <a href=""-->
@@ -231,15 +232,15 @@
             <!--                </a>-->
             <!--              </span>-->
             <!--              &lt;!&ndash; Code Link. &ndash;&gt;-->
-            <!--              <span class="link-block">-->
-            <!--                <a href=""-->
-            <!--                   class="external-link button is-normal is-rounded is-dark" disabled>-->
-            <!--                  <span class="icon">-->
-            <!--                      <i class="fab fa-github"></i>-->
-            <!--                  </span>-->
-            <!--                  <span>Code</span>-->
-            <!--                  </a>-->
-            <!--              </span>-->
+            <span class="link-block">
+              <a href="https://github.com/google/hypernerf"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>
           </div>
         </div>
       </div>
@@ -339,9 +340,11 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-quarters">
           <p>
-            Here we show results generated with <i>HyperNeRF</i>. These videos show the input video being
+            Here we show results generated with <i>HyperNeRF</i>. These videos show the input video
+            being
             played
-            back with a stabilized novel camera path. The right side video shows the depth of the scene.
+            back with a stabilized novel camera path. The right side video shows the depth of the
+            scene.
             Click on the arrows or drag to see more results.
           </p>
         </div>
@@ -370,17 +373,16 @@
             deformation fields are necessarily continuous.
           </p>
           <p>
-            We address this limitation by lifting NeRFs into a higher dimensional space, and by
-            representing the 5D radiance field corresponding to each individual input image as a
-            slice through this "hyper-space".
-            Our method is inspired by level set methods, which model the evolution of surfaces as
-            slices through a higher dimensional surface.
-            We evaluate our method on two tasks: (i) interpolating smoothly between "moments",
-            i.e., configurations of the scene, seen in the input images while maintaining visual
-            plausibility, and (ii) novel-view synthesis at fixed moments. We show that our method,
-            which we dub <i>HyperNeRF</i>, outperforms existing methods on both tasks by significant
-            margins. Compared to Nerfies, HyperNeRF reduces average error rates by 8.6% for
-            interpolation and 8.8% for novel-view synthesis, as measured by LPIPS.
+            We address this limitation by lifting
+            NeRFs into a higher dimensional space, and by representing the 5D radiance field
+            corresponding to each individual input image as a slice through this "hyper-space". Our
+            method is inspired by level set methods, which model the evolution of surfaces as slices
+            through a higher dimensional surface. We evaluate our method on two tasks: (i)
+            interpolating smoothly between "moments", i.e., configurations of the scene, seen in the
+            input images while maintaining visual plausibility, and (ii) novel-view synthesis at
+            fixed moments. We show that our method, which we dub HyperNeRF, outperforms existing
+            methods on both tasks. Compared to Nerfies, <i>HyperNeRF</i> reduces average error rates by
+            4.1% for interpolation and 8.6% for novel-view synthesis, as measured by LPIPS.
           </p>
         </div>
       </div>
@@ -547,6 +549,17 @@
   journal   = {arXiv preprint arXiv:2106.13228},
   year      = {2021},
 }</code></pre>
+  </div>
+</section>
+
+
+<section class="section" id="acknowledgements">
+  <div class="container content is-max-desktop">
+    <h2 class="title">Acknowledgements</h2>
+    <p>Special thanks to <a href="https://homes.cs.washington.edu/~holynski/">Aleksander Hołyński</a>,
+      <a href="https://roxanneluo.github.io/">Xuan Luo</a>, and Haley Cho for their support and
+      help with collecting data. Thanks to <a href="https://zhengqili.github.io/">Zhengqi Li</a> and
+      <a href="http://www.oliverwang.info/">Oliver Wang</a> for their help with the NSFF experiments.</p>
   </div>
 </section>
 

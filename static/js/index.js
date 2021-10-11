@@ -22,18 +22,11 @@ $(document).ready(function() {
 
 
 $(window).on("load", function(){
-    $('.author-portrait > video').each(function() {
-      let el = $(this);
-      let video_node = el.get(0);
-      video_node.load();
+    // Reset gifs once everything is loaded to synchronize playback.
+    $('.preload').attr('src', function(i, a){
+        $(this).attr('src','').removeClass('preload').attr('src', a);
     });
-    $('.author-portrait > video').each(function() {
-      let el = $(this);
-      let video_node = el.get(0);
-      el.on('canplaythrough', function(e) {
-        video_node.play();
-      })
-    });
+
     $('.author-portrait').each(function() {
       $(this).mouseover(function() {
           $(this).find('.depth').css('top', '-100%');

@@ -24,16 +24,17 @@ body {
 
 .author-portrait {
   overflow: hidden;
-  width: 140px;
-  height: 140px;
+  width: 128px;
+  height: 128px;
   font-size: 0;
   margin: auto;
 }
-.author-portrait video {
-  border-radius: 50%;
-  width: 140px;
-  position: relative;
+.author-portrait img {
+    border-radius: 50%;
+    width: 140px;
+    position: relative;
 }
+
 .author-portrait .depth {
 }
 
